@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59CDA3E756DE072FDBFD03C5 /* Pods_Augmented_Reality_Wayfinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF1C8F1806500D4124328D0 /* Pods_Augmented_Reality_Wayfinding.framework */; };
+		90E2B7302018B792006A3782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B72F2018B792006A3782 /* AppDelegate.swift */; };
+		90E2B7322018B792006A3782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7312018B792006A3782 /* ViewController.swift */; };
+		90E2B7352018B792006A3782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B7332018B792006A3782 /* Main.storyboard */; };
+		90E2B7372018B792006A3782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B7362018B792006A3782 /* Assets.xcassets */; };
+		90E2B73A2018B792006A3782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B7382018B792006A3782 /* LaunchScreen.storyboard */; };
+		90E2B7452018B792006A3782 /* Augmented_Reality_WayfindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7442018B792006A3782 /* Augmented_Reality_WayfindingTests.swift */; };
+		90E2B7502018B792006A3782 /* Augmented_Reality_WayfindingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B74F2018B792006A3782 /* Augmented_Reality_WayfindingUITests.swift */; };
+		90E2B7832018B7A4006A3782 /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B75F2018B7A3006A3782 /* LineSegment.swift */; };
+		90E2B7842018B7A4006A3782 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7602018B7A3006A3782 /* BaseNode.swift */; };
+		90E2B7852018B7A4006A3782 /* POIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7612018B7A3006A3782 /* POIAnnotation.swift */; };
+		90E2B7862018B7A4006A3782 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7622018B7A3006A3782 /* LocationData.swift */; };
+		90E2B7872018B7A4006A3782 /* LocationTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7632018B7A3006A3782 /* LocationTranslation.swift */; };
+		90E2B7882018B7A4006A3782 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7652018B7A3006A3782 /* CLLocationCoordinate2D+Extension.swift */; };
+		90E2B7892018B7A4006A3782 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7662018B7A3006A3782 /* CLLocation+Extension.swift */; };
+		90E2B78A2018B7A4006A3782 /* StoryboardIdentifiableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7672018B7A3006A3782 /* StoryboardIdentifiableError.swift */; };
+		90E2B78B2018B7A4006A3782 /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7682018B7A3006A3782 /* SCNVector3+Extension.swift */; };
+		90E2B78C2018B7A4006A3782 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7692018B7A3006A3782 /* Double+Extension.swift */; };
+		90E2B78D2018B7A4006A3782 /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B76A2018B7A3006A3782 /* ARConstants.swift */; };
+		90E2B78E2018B7A4006A3782 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B76B2018B7A3006A3782 /* UIStoryboard+Extension.swift */; };
+		90E2B78F2018B7A4006A3782 /* MKRouteStep+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B76C2018B7A3006A3782 /* MKRouteStep+Extension.swift */; };
+		90E2B7902018B7A4006A3782 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B76D2018B7A3006A3782 /* Navigation.storyboard */; };
+		90E2B7912018B7A4006A3782 /* ARRouteToMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B76E2018B7A3006A3782 /* ARRouteToMapView.swift */; };
+		90E2B7922018B7A4006A3782 /* ArRoutingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B76F2018B7A3006A3782 /* ArRoutingTableCell.swift */; };
+		90E2B7932018B7A4006A3782 /* SchipholNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B7702018B7A3006A3782 /* SchipholNavigation.storyboard */; };
+		90E2B7942018B7A4006A3782 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7712018B7A3006A3782 /* ARViewController.swift */; };
+		90E2B7952018B7A4006A3782 /* NavigationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7732018B7A3006A3782 /* NavigationViewControllerDelegate.swift */; };
+		90E2B7962018B7A4006A3782 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7742018B7A3006A3782 /* StoryboardIdentifiable.swift */; };
+		90E2B7972018B7A4006A3782 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7752018B7A3006A3782 /* Controller.swift */; };
+		90E2B7982018B7A4006A3782 /* MessagePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7762018B7A3006A3782 /* MessagePresenting.swift */; };
+		90E2B7992018B7A4006A3782 /* LocationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7772018B7A3006A3782 /* LocationServiceDelegate.swift */; };
+		90E2B79A2018B7A4006A3782 /* Mapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7782018B7A3006A3782 /* Mapable.swift */; };
+		90E2B79B2018B7A4006A3782 /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7792018B7A3006A3782 /* ControllerType.swift */; };
+		90E2B79C2018B7A4006A3782 /* ArRoutingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B77A2018B7A3006A3782 /* ArRoutingTableCell.xib */; };
+		90E2B79D2018B7A4006A3782 /* routeSchiphol.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E2B77C2018B7A3006A3782 /* routeSchiphol.json */; };
+		90E2B79E2018B7A4006A3782 /* WayFindingSchipholService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B77D2018B7A3006A3782 /* WayFindingSchipholService.swift */; };
+		90E2B79F2018B7A4006A3782 /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B77F2018B7A3006A3782 /* MatrixHelper.swift */; };
+		90E2B7A02018B7A4006A3782 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7802018B7A3006A3782 /* Color.swift */; };
+		90E2B7A12018B7A4006A3782 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7812018B7A3006A3782 /* LocationService.swift */; };
+		90E2B7A22018B7A4006A3782 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7822018B7A3006A3782 /* NavigationService.swift */; };
+		90E2B7A42018B8A4006A3782 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2B7A32018B8A4006A3782 /* UIViewControllerExtensions.swift */; };
+		A8F6508B53967CB66B20B6C8 /* Pods_Augmented_Reality_WayfindingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036A199EC4A1F647F42A2A09 /* Pods_Augmented_Reality_WayfindingUITests.framework */; };
+		EADCD92037D71C6644592105 /* Pods_Augmented_Reality_WayfindingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C81F8EB264C82C97D463BC /* Pods_Augmented_Reality_WayfindingTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90E2B7412018B792006A3782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E2B7242018B792006A3782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E2B72B2018B792006A3782;
+			remoteInfo = "Augmented Reality Wayfinding";
+		};
+		90E2B74C2018B792006A3782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E2B7242018B792006A3782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E2B72B2018B792006A3782;
+			remoteInfo = "Augmented Reality Wayfinding";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036A199EC4A1F647F42A2A09 /* Pods_Augmented_Reality_WayfindingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augmented_Reality_WayfindingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C81F8EB264C82C97D463BC /* Pods_Augmented_Reality_WayfindingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augmented_Reality_WayfindingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422BB7EFD0BEE5F2BAD167CA /* Pods-Augmented Reality WayfindingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality WayfindingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality WayfindingTests/Pods-Augmented Reality WayfindingTests.release.xcconfig"; sourceTree = "<group>"; };
+		451BCFE2767D3BBBC9578C4A /* Pods-Augmented Reality Wayfinding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality Wayfinding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality Wayfinding/Pods-Augmented Reality Wayfinding.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF1C8F1806500D4124328D0 /* Pods_Augmented_Reality_Wayfinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augmented_Reality_Wayfinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E2B72C2018B792006A3782 /* Augmented Reality Wayfinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented Reality Wayfinding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E2B72F2018B792006A3782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90E2B7312018B792006A3782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90E2B7342018B792006A3782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90E2B7362018B792006A3782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90E2B7392018B792006A3782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90E2B73B2018B792006A3782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E2B7402018B792006A3782 /* Augmented Reality WayfindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Augmented Reality WayfindingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E2B7442018B792006A3782 /* Augmented_Reality_WayfindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Augmented_Reality_WayfindingTests.swift; sourceTree = "<group>"; };
+		90E2B7462018B792006A3782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E2B74B2018B792006A3782 /* Augmented Reality WayfindingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Augmented Reality WayfindingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E2B74F2018B792006A3782 /* Augmented_Reality_WayfindingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Augmented_Reality_WayfindingUITests.swift; sourceTree = "<group>"; };
+		90E2B7512018B792006A3782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E2B75F2018B7A3006A3782 /* LineSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegment.swift; sourceTree = "<group>"; };
+		90E2B7602018B7A3006A3782 /* BaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		90E2B7612018B7A3006A3782 /* POIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIAnnotation.swift; sourceTree = "<group>"; };
+		90E2B7622018B7A3006A3782 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		90E2B7632018B7A3006A3782 /* LocationTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTranslation.swift; sourceTree = "<group>"; };
+		90E2B7652018B7A3006A3782 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		90E2B7662018B7A3006A3782 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		90E2B7672018B7A3006A3782 /* StoryboardIdentifiableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiableError.swift; sourceTree = "<group>"; };
+		90E2B7682018B7A3006A3782 /* SCNVector3+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extension.swift"; sourceTree = "<group>"; };
+		90E2B7692018B7A3006A3782 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		90E2B76A2018B7A3006A3782 /* ARConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
+		90E2B76B2018B7A3006A3782 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		90E2B76C2018B7A3006A3782 /* MKRouteStep+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKRouteStep+Extension.swift"; sourceTree = "<group>"; };
+		90E2B76D2018B7A3006A3782 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		90E2B76E2018B7A3006A3782 /* ARRouteToMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARRouteToMapView.swift; sourceTree = "<group>"; };
+		90E2B76F2018B7A3006A3782 /* ArRoutingTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArRoutingTableCell.swift; sourceTree = "<group>"; };
+		90E2B7702018B7A3006A3782 /* SchipholNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SchipholNavigation.storyboard; sourceTree = "<group>"; };
+		90E2B7712018B7A3006A3782 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		90E2B7732018B7A3006A3782 /* NavigationViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerDelegate.swift; sourceTree = "<group>"; };
+		90E2B7742018B7A3006A3782 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		90E2B7752018B7A3006A3782 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		90E2B7762018B7A3006A3782 /* MessagePresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenting.swift; sourceTree = "<group>"; };
+		90E2B7772018B7A3006A3782 /* LocationServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceDelegate.swift; sourceTree = "<group>"; };
+		90E2B7782018B7A3006A3782 /* Mapable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapable.swift; sourceTree = "<group>"; };
+		90E2B7792018B7A3006A3782 /* ControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
+		90E2B77A2018B7A3006A3782 /* ArRoutingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArRoutingTableCell.xib; sourceTree = "<group>"; };
+		90E2B77C2018B7A3006A3782 /* routeSchiphol.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = routeSchiphol.json; sourceTree = "<group>"; };
+		90E2B77D2018B7A3006A3782 /* WayFindingSchipholService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayFindingSchipholService.swift; sourceTree = "<group>"; };
+		90E2B77F2018B7A3006A3782 /* MatrixHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		90E2B7802018B7A3006A3782 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		90E2B7812018B7A3006A3782 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		90E2B7822018B7A3006A3782 /* NavigationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		90E2B7A32018B8A4006A3782 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A2415A4897F365A202EA3663 /* Pods-Augmented Reality WayfindingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality WayfindingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality WayfindingUITests/Pods-Augmented Reality WayfindingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3A5F944EE231F61FC437265 /* Pods-Augmented Reality Wayfinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality Wayfinding.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality Wayfinding/Pods-Augmented Reality Wayfinding.release.xcconfig"; sourceTree = "<group>"; };
+		A68D895C01F6CED49FBA1B7B /* Pods-Augmented Reality WayfindingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality WayfindingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality WayfindingUITests/Pods-Augmented Reality WayfindingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D351A42A743044D9CB431635 /* Pods-Augmented Reality WayfindingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented Reality WayfindingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augmented Reality WayfindingTests/Pods-Augmented Reality WayfindingTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90E2B7292018B792006A3782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CDA3E756DE072FDBFD03C5 /* Pods_Augmented_Reality_Wayfinding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B73D2018B792006A3782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADCD92037D71C6644592105 /* Pods_Augmented_Reality_WayfindingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B7482018B792006A3782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F6508B53967CB66B20B6C8 /* Pods_Augmented_Reality_WayfindingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006F8A22F517C8658E170612 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				451BCFE2767D3BBBC9578C4A /* Pods-Augmented Reality Wayfinding.debug.xcconfig */,
+				A3A5F944EE231F61FC437265 /* Pods-Augmented Reality Wayfinding.release.xcconfig */,
+				D351A42A743044D9CB431635 /* Pods-Augmented Reality WayfindingTests.debug.xcconfig */,
+				422BB7EFD0BEE5F2BAD167CA /* Pods-Augmented Reality WayfindingTests.release.xcconfig */,
+				A68D895C01F6CED49FBA1B7B /* Pods-Augmented Reality WayfindingUITests.debug.xcconfig */,
+				A2415A4897F365A202EA3663 /* Pods-Augmented Reality WayfindingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		410915902F444F3F62601385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EF1C8F1806500D4124328D0 /* Pods_Augmented_Reality_Wayfinding.framework */,
+				04C81F8EB264C82C97D463BC /* Pods_Augmented_Reality_WayfindingTests.framework */,
+				036A199EC4A1F647F42A2A09 /* Pods_Augmented_Reality_WayfindingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90E2B7232018B792006A3782 = {
+			isa = PBXGroup;
+			children = (
+				90E2B72E2018B792006A3782 /* Augmented Reality Wayfinding */,
+				90E2B7432018B792006A3782 /* Augmented Reality WayfindingTests */,
+				90E2B74E2018B792006A3782 /* Augmented Reality WayfindingUITests */,
+				90E2B72D2018B792006A3782 /* Products */,
+				006F8A22F517C8658E170612 /* Pods */,
+				410915902F444F3F62601385 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		90E2B72D2018B792006A3782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B72C2018B792006A3782 /* Augmented Reality Wayfinding.app */,
+				90E2B7402018B792006A3782 /* Augmented Reality WayfindingTests.xctest */,
+				90E2B74B2018B792006A3782 /* Augmented Reality WayfindingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90E2B72E2018B792006A3782 /* Augmented Reality Wayfinding */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B75D2018B7A3006A3782 /* AR-Routing */,
+				90E2B72F2018B792006A3782 /* AppDelegate.swift */,
+				90E2B7312018B792006A3782 /* ViewController.swift */,
+				90E2B7A32018B8A4006A3782 /* UIViewControllerExtensions.swift */,
+				90E2B7332018B792006A3782 /* Main.storyboard */,
+				90E2B7362018B792006A3782 /* Assets.xcassets */,
+				90E2B7382018B792006A3782 /* LaunchScreen.storyboard */,
+				90E2B73B2018B792006A3782 /* Info.plist */,
+			);
+			path = "Augmented Reality Wayfinding";
+			sourceTree = "<group>";
+		};
+		90E2B7432018B792006A3782 /* Augmented Reality WayfindingTests */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B7442018B792006A3782 /* Augmented_Reality_WayfindingTests.swift */,
+				90E2B7462018B792006A3782 /* Info.plist */,
+			);
+			path = "Augmented Reality WayfindingTests";
+			sourceTree = "<group>";
+		};
+		90E2B74E2018B792006A3782 /* Augmented Reality WayfindingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B74F2018B792006A3782 /* Augmented_Reality_WayfindingUITests.swift */,
+				90E2B7512018B792006A3782 /* Info.plist */,
+			);
+			path = "Augmented Reality WayfindingUITests";
+			sourceTree = "<group>";
+		};
+		90E2B75D2018B7A3006A3782 /* AR-Routing */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B75E2018B7A3006A3782 /* Models */,
+				90E2B7642018B7A3006A3782 /* Extensions */,
+				90E2B76D2018B7A3006A3782 /* Navigation.storyboard */,
+				90E2B76E2018B7A3006A3782 /* ARRouteToMapView.swift */,
+				90E2B76F2018B7A3006A3782 /* ArRoutingTableCell.swift */,
+				90E2B7702018B7A3006A3782 /* SchipholNavigation.storyboard */,
+				90E2B7712018B7A3006A3782 /* ARViewController.swift */,
+				90E2B7722018B7A3006A3782 /* Protocols */,
+				90E2B77A2018B7A3006A3782 /* ArRoutingTableCell.xib */,
+				90E2B77B2018B7A3006A3782 /* Services */,
+			);
+			path = "AR-Routing";
+			sourceTree = "<group>";
+		};
+		90E2B75E2018B7A3006A3782 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B75F2018B7A3006A3782 /* LineSegment.swift */,
+				90E2B7602018B7A3006A3782 /* BaseNode.swift */,
+				90E2B7612018B7A3006A3782 /* POIAnnotation.swift */,
+				90E2B7622018B7A3006A3782 /* LocationData.swift */,
+				90E2B7632018B7A3006A3782 /* LocationTranslation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90E2B7642018B7A3006A3782 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B7652018B7A3006A3782 /* CLLocationCoordinate2D+Extension.swift */,
+				90E2B7662018B7A3006A3782 /* CLLocation+Extension.swift */,
+				90E2B7672018B7A3006A3782 /* StoryboardIdentifiableError.swift */,
+				90E2B7682018B7A3006A3782 /* SCNVector3+Extension.swift */,
+				90E2B7692018B7A3006A3782 /* Double+Extension.swift */,
+				90E2B76A2018B7A3006A3782 /* ARConstants.swift */,
+				90E2B76B2018B7A3006A3782 /* UIStoryboard+Extension.swift */,
+				90E2B76C2018B7A3006A3782 /* MKRouteStep+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90E2B7722018B7A3006A3782 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B7732018B7A3006A3782 /* NavigationViewControllerDelegate.swift */,
+				90E2B7742018B7A3006A3782 /* StoryboardIdentifiable.swift */,
+				90E2B7752018B7A3006A3782 /* Controller.swift */,
+				90E2B7762018B7A3006A3782 /* MessagePresenting.swift */,
+				90E2B7772018B7A3006A3782 /* LocationServiceDelegate.swift */,
+				90E2B7782018B7A3006A3782 /* Mapable.swift */,
+				90E2B7792018B7A3006A3782 /* ControllerType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		90E2B77B2018B7A3006A3782 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B77C2018B7A3006A3782 /* routeSchiphol.json */,
+				90E2B77D2018B7A3006A3782 /* WayFindingSchipholService.swift */,
+				90E2B77E2018B7A3006A3782 /* Helpers */,
+				90E2B7812018B7A3006A3782 /* LocationService.swift */,
+				90E2B7822018B7A3006A3782 /* NavigationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		90E2B77E2018B7A3006A3782 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90E2B77F2018B7A3006A3782 /* MatrixHelper.swift */,
+				90E2B7802018B7A3006A3782 /* Color.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90E2B72B2018B792006A3782 /* Augmented Reality Wayfinding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E2B7542018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality Wayfinding" */;
+			buildPhases = (
+				5AA11824BD3028A3EACED4CF /* [CP] Check Pods Manifest.lock */,
+				90E2B7282018B792006A3782 /* Sources */,
+				90E2B7292018B792006A3782 /* Frameworks */,
+				90E2B72A2018B792006A3782 /* Resources */,
+				64EC3892E79021B91C465EF6 /* [CP] Embed Pods Frameworks */,
+				6B5DF65630C3416D998FA5B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Augmented Reality Wayfinding";
+			productName = "Augmented Reality Wayfinding";
+			productReference = 90E2B72C2018B792006A3782 /* Augmented Reality Wayfinding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90E2B73F2018B792006A3782 /* Augmented Reality WayfindingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E2B7572018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality WayfindingTests" */;
+			buildPhases = (
+				7AA79D1FC35EF01CFE7DD5C7 /* [CP] Check Pods Manifest.lock */,
+				90E2B73C2018B792006A3782 /* Sources */,
+				90E2B73D2018B792006A3782 /* Frameworks */,
+				90E2B73E2018B792006A3782 /* Resources */,
+				6FCB075EF8AED307C1BA20F3 /* [CP] Embed Pods Frameworks */,
+				04C44B8EA7230692ECFFEE33 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90E2B7422018B792006A3782 /* PBXTargetDependency */,
+			);
+			name = "Augmented Reality WayfindingTests";
+			productName = "Augmented Reality WayfindingTests";
+			productReference = 90E2B7402018B792006A3782 /* Augmented Reality WayfindingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90E2B74A2018B792006A3782 /* Augmented Reality WayfindingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E2B75A2018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality WayfindingUITests" */;
+			buildPhases = (
+				319C1AD58B31869E863F2F34 /* [CP] Check Pods Manifest.lock */,
+				90E2B7472018B792006A3782 /* Sources */,
+				90E2B7482018B792006A3782 /* Frameworks */,
+				90E2B7492018B792006A3782 /* Resources */,
+				01B65F7CE21A5E992F2DF686 /* [CP] Embed Pods Frameworks */,
+				98B0FE8B40F99166BC3F34F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90E2B74D2018B792006A3782 /* PBXTargetDependency */,
+			);
+			name = "Augmented Reality WayfindingUITests";
+			productName = "Augmented Reality WayfindingUITests";
+			productReference = 90E2B74B2018B792006A3782 /* Augmented Reality WayfindingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90E2B7242018B792006A3782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Ben Smith";
+				TargetAttributes = {
+					90E2B72B2018B792006A3782 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					90E2B73F2018B792006A3782 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 90E2B72B2018B792006A3782;
+					};
+					90E2B74A2018B792006A3782 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 90E2B72B2018B792006A3782;
+					};
+				};
+			};
+			buildConfigurationList = 90E2B7272018B792006A3782 /* Build configuration list for PBXProject "Augmented Reality Wayfinding" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90E2B7232018B792006A3782;
+			productRefGroup = 90E2B72D2018B792006A3782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90E2B72B2018B792006A3782 /* Augmented Reality Wayfinding */,
+				90E2B73F2018B792006A3782 /* Augmented Reality WayfindingTests */,
+				90E2B74A2018B792006A3782 /* Augmented Reality WayfindingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90E2B72A2018B792006A3782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E2B7902018B7A4006A3782 /* Navigation.storyboard in Resources */,
+				90E2B73A2018B792006A3782 /* LaunchScreen.storyboard in Resources */,
+				90E2B79C2018B7A4006A3782 /* ArRoutingTableCell.xib in Resources */,
+				90E2B7372018B792006A3782 /* Assets.xcassets in Resources */,
+				90E2B7352018B792006A3782 /* Main.storyboard in Resources */,
+				90E2B79D2018B7A4006A3782 /* routeSchiphol.json in Resources */,
+				90E2B7932018B7A4006A3782 /* SchipholNavigation.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B73E2018B792006A3782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B7492018B792006A3782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B65F7CE21A5E992F2DF686 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality WayfindingUITests/Pods-Augmented Reality WayfindingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04C44B8EA7230692ECFFEE33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality WayfindingTests/Pods-Augmented Reality WayfindingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		319C1AD58B31869E863F2F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Augmented Reality WayfindingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA11824BD3028A3EACED4CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Augmented Reality Wayfinding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64EC3892E79021B91C465EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality Wayfinding/Pods-Augmented Reality Wayfinding-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality Wayfinding/Pods-Augmented Reality Wayfinding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5DF65630C3416D998FA5B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality Wayfinding/Pods-Augmented Reality Wayfinding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCB075EF8AED307C1BA20F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality WayfindingTests/Pods-Augmented Reality WayfindingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA79D1FC35EF01CFE7DD5C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Augmented Reality WayfindingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B0FE8B40F99166BC3F34F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Augmented Reality WayfindingUITests/Pods-Augmented Reality WayfindingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90E2B7282018B792006A3782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E2B7992018B7A4006A3782 /* LocationServiceDelegate.swift in Sources */,
+				90E2B78B2018B7A4006A3782 /* SCNVector3+Extension.swift in Sources */,
+				90E2B79B2018B7A4006A3782 /* ControllerType.swift in Sources */,
+				90E2B7922018B7A4006A3782 /* ArRoutingTableCell.swift in Sources */,
+				90E2B7862018B7A4006A3782 /* LocationData.swift in Sources */,
+				90E2B7942018B7A4006A3782 /* ARViewController.swift in Sources */,
+				90E2B7982018B7A4006A3782 /* MessagePresenting.swift in Sources */,
+				90E2B7962018B7A4006A3782 /* StoryboardIdentifiable.swift in Sources */,
+				90E2B78D2018B7A4006A3782 /* ARConstants.swift in Sources */,
+				90E2B7A02018B7A4006A3782 /* Color.swift in Sources */,
+				90E2B7972018B7A4006A3782 /* Controller.swift in Sources */,
+				90E2B7892018B7A4006A3782 /* CLLocation+Extension.swift in Sources */,
+				90E2B79A2018B7A4006A3782 /* Mapable.swift in Sources */,
+				90E2B7872018B7A4006A3782 /* LocationTranslation.swift in Sources */,
+				90E2B79E2018B7A4006A3782 /* WayFindingSchipholService.swift in Sources */,
+				90E2B7322018B792006A3782 /* ViewController.swift in Sources */,
+				90E2B78E2018B7A4006A3782 /* UIStoryboard+Extension.swift in Sources */,
+				90E2B7302018B792006A3782 /* AppDelegate.swift in Sources */,
+				90E2B7842018B7A4006A3782 /* BaseNode.swift in Sources */,
+				90E2B79F2018B7A4006A3782 /* MatrixHelper.swift in Sources */,
+				90E2B7852018B7A4006A3782 /* POIAnnotation.swift in Sources */,
+				90E2B7A42018B8A4006A3782 /* UIViewControllerExtensions.swift in Sources */,
+				90E2B78C2018B7A4006A3782 /* Double+Extension.swift in Sources */,
+				90E2B78A2018B7A4006A3782 /* StoryboardIdentifiableError.swift in Sources */,
+				90E2B78F2018B7A4006A3782 /* MKRouteStep+Extension.swift in Sources */,
+				90E2B7832018B7A4006A3782 /* LineSegment.swift in Sources */,
+				90E2B7A22018B7A4006A3782 /* NavigationService.swift in Sources */,
+				90E2B7A12018B7A4006A3782 /* LocationService.swift in Sources */,
+				90E2B7882018B7A4006A3782 /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				90E2B7912018B7A4006A3782 /* ARRouteToMapView.swift in Sources */,
+				90E2B7952018B7A4006A3782 /* NavigationViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B73C2018B792006A3782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E2B7452018B792006A3782 /* Augmented_Reality_WayfindingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2B7472018B792006A3782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E2B7502018B792006A3782 /* Augmented_Reality_WayfindingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90E2B7422018B792006A3782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E2B72B2018B792006A3782 /* Augmented Reality Wayfinding */;
+			targetProxy = 90E2B7412018B792006A3782 /* PBXContainerItemProxy */;
+		};
+		90E2B74D2018B792006A3782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E2B72B2018B792006A3782 /* Augmented Reality Wayfinding */;
+			targetProxy = 90E2B74C2018B792006A3782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90E2B7332018B792006A3782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E2B7342018B792006A3782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90E2B7382018B792006A3782 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E2B7392018B792006A3782 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90E2B7522018B792006A3782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90E2B7532018B792006A3782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E2B7552018B792006A3782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451BCFE2767D3BBBC9578C4A /* Pods-Augmented Reality Wayfinding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality Wayfinding/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-Wayfinding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90E2B7562018B792006A3782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A5F944EE231F61FC437265 /* Pods-Augmented Reality Wayfinding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality Wayfinding/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-Wayfinding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		90E2B7582018B792006A3782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D351A42A743044D9CB431635 /* Pods-Augmented Reality WayfindingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality WayfindingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-WayfindingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Augmented Reality Wayfinding.app/Augmented Reality Wayfinding";
+			};
+			name = Debug;
+		};
+		90E2B7592018B792006A3782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422BB7EFD0BEE5F2BAD167CA /* Pods-Augmented Reality WayfindingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality WayfindingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-WayfindingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Augmented Reality Wayfinding.app/Augmented Reality Wayfinding";
+			};
+			name = Release;
+		};
+		90E2B75B2018B792006A3782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68D895C01F6CED49FBA1B7B /* Pods-Augmented Reality WayfindingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality WayfindingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-WayfindingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Augmented Reality Wayfinding";
+			};
+			name = Debug;
+		};
+		90E2B75C2018B792006A3782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2415A4897F365A202EA3663 /* Pods-Augmented Reality WayfindingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = "Augmented Reality WayfindingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensmithinc.KLMTrip.Augmented-Reality-WayfindingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Augmented Reality Wayfinding";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90E2B7272018B792006A3782 /* Build configuration list for PBXProject "Augmented Reality Wayfinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E2B7522018B792006A3782 /* Debug */,
+				90E2B7532018B792006A3782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E2B7542018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality Wayfinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E2B7552018B792006A3782 /* Debug */,
+				90E2B7562018B792006A3782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E2B7572018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality WayfindingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E2B7582018B792006A3782 /* Debug */,
+				90E2B7592018B792006A3782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E2B75A2018B792006A3782 /* Build configuration list for PBXNativeTarget "Augmented Reality WayfindingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E2B75B2018B792006A3782 /* Debug */,
+				90E2B75C2018B792006A3782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90E2B7242018B792006A3782 /* Project object */;
+}
